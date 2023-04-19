@@ -1,0 +1,27 @@
+﻿@using WebApplication1.Data
+@{
+    ViewData["Title"] = "Zadanie";
+}
+@model List<Class>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var items in Model)
+            {
+                
+                <tr>
+                    <td>@items.Name</td>
+                    <td>@items.email</td>
+                </tr>
+                
+            }
+        </tbody>
+    </table>
+</div>

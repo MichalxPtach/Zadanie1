@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using WebApplication1.Data
+@{
+    ViewData["Title"] = "Zadanie";
+}
+@model List<Class>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Category</th>
+                <th>Phone</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var items in Model)
+            {
+                <tr>
+                    <td>@items.Name</td>
+                    <td>@items.Surname</td>
+                    <td>@items.email</td>
+                    <td>@items.passwd</td>
+                    <td>@items.category</td>
+                    <td>@items.phone</td>
+                    <td>@items.date</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
