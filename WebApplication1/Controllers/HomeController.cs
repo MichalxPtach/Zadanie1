@@ -26,11 +26,7 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
-        /*public IActionResult Zalogowany()
-        {
-            var items = dbcontext.classes.ToList();
-            return View(items);
-        }*/
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
